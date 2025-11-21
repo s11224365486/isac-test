@@ -2,7 +2,7 @@
 <html>
 <body>
 <script>
-fetch("https://target.com/api/endpoint")
+fetch("https://qt.lgradioplus.com/api/1.0/app/channel/public/retrieveChannels/ALL/ALL?searchChannelName=Black&size=200")
   .then(r => r.text())
   .then(t => {
       document.body.innerText = t; // 응답 출력
