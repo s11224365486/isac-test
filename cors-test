@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+fetch("https://target.com/api/endpoint")
+  .then(r => r.text())
+  .then(t => {
+      document.body.innerText = t; // 응답 출력
+  })
+  .catch(e => {
+      document.body.innerText = "BLOCKED: " + e;
+  });
+</script>
+</body>
+</html>
